@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Noto Sans CJK SC regular", "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
+    background: #f5f7f8;
+}
+
+.ta h1 {
+    margin: 24px 0 0 0;
+    font-weight: 700;
+}
+
+.ta {
+    display: flex;
+    flex-flow: column;
+    height: 50%;
+    width: 50%;
+    margin: 64px auto 64px auto;
+    /*background: #ffd34e;*/
+    border-radius: 4px;
+}
+
+.tr {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 25%;
+}
+
+.chb {
+    padding: 4px;
+}
+
+button {
+    width: 25%;
+}
+
+@media (max-width:460px) {
+    .tr :nth-child(2) {
+        max-width: 90%;
+    }
+    button {
+        width: 50%;
+    }
+    .ta {
+        max-width: 50%;
+    }
+}
+
+.tr p {
+    margin: 0;
+    padding: 8px;
+}

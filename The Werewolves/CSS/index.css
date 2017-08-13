@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Noto Sans CJK SC regular","SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
+    background: #1a227d;
+    /*background: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(image/bg.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
+}
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    height: 48px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 500px) {
+    header {
+        justify-content: space-around;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 16px;
+    font-size: 16px;
+    font-family: "Noto Sans CJK SC medium","SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+nav a:hover {
+    color: #3949ab;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+main {
+    flex: 1;
+    margin: 0 auto;
+    width: 90%;
+}
+
+article {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    margin-top: 48px;
+}
+
+article h1 {
+    font-size: 64px;
+    margin: 0;
+    font-family: "Noto Sans CJK SC Thin","SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
+    font-weight: lighter;
+    color: white;
+    /*border-bottom: 4px solid #ff4081;*/
+}
+
+.mir {
+    background: url(../image/full_moon.svg);
+    margin: auto 0px 0px auto;
+    width: 200px;
+    height: 192px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#descript p {
+    padding: 32px 32px 32px 0px;
+    line-height: 2;
+    font-size: 18px;
+    color: rgba(255, 255, 255, .8);
+}
+
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    padding: 16px;
+    height: 48px;
+    font-size: 12px;
+    background: rgba(22, 22, 22, 1);
+    color: rgba(178, 178, 178, 1);
+}
+
+svg {
+    padding: 16px 0 16px 0;
+    fill: rgba(178, 178, 178, .8);
+}
+
+svg:hover {
+    fill: #b2b2b2;
+}
+
+footer p {
+    margin: 0;
+    padding: 16px;
+    font-weight: bold;
+}

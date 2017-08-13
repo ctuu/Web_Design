@@ -1,0 +1,30 @@
+﻿贼 Voleur
+丘比特 Cupidon
+小女孩 Petite_Fille
+女巫 Sorcière
+狼人 Loup-Garou
+预言家 Voyante
+村民 Simple_Villageois
+替罪羊 Le_bouc_émissaire
+守卫 Salvateur
+白痴 Idiot_du_village
+猎人 Chasseur
+吹笛者 Le_joueur_de_flûte
+长老 L'ancien
+警长 Garde champêtre
+
+Result
+  村民 Simple_Villageois
+  狼人 Loup-Garou
+  猎人 Chasseur
+  白痴 Idiot_du_village
+  长老 L'ancien
+替罪羊 Le_bouc_émissaire
+小女孩 Petite_Fille
+  守卫 Salvateur
+  女巫 Sorcière
+预言家 Voyante
+丘比特 Cupidon
+吹笛者 Le_joueur_de_flûte
+    贼 Voleur
+  警长 Garde champêtre

@@ -1,0 +1,175 @@
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Noto Sans CJK SC regular", "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
+    background: rgba(232, 232, 232, 1);
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    height: 48px;
+    width: 100%;
+    z-index: 2;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+#logo {
+    height: 48px;
+    width: 48px;
+    background: rgba(0, 0, 0, .2);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 16px;
+    font-size: 12px;
+    font-family: "Noto Sans CJK SC regular", "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+nav a:hover {
+    color: #3949ab;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#banner {
+    grid-column: full;
+    margin: 56px auto 8px auto;
+    width: calc(100% - 32px);
+    background-image: url(../image/banner.png);
+    padding-bottom: 20%;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, .2);
+}
+
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 60em) [main-end] minmax(1em, 1fr) [full-end];
+    /*background: rgba(119, 25, 170, 1);*/
+}
+
+main>* {
+    grid-column: main;
+}
+
+#announce {
+    grid-column: full;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#announce .item {
+    display: flex;
+    flex-flow: column;
+    padding: 16px;
+    margin: 2px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+}
+
+#announce .item:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+#announce .item .camp {
+    float: right;
+    margin: -16px -16px -16px 0;
+    height: 32px;
+    width: 64px;
+    border-radius: 0 0 0 16px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    align-self: flex-end;
+    color: white;
+}
+
+#announce .item article {
+    flex: 1;
+}
+
+#announce .item h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+#content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#content #main {
+    flex: 1 0 60%;
+    /*padding: 16px;*/
+}
+
+#content #main a {
+    font-size: 36px;
+    color: #333333;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#content #main a:hover {
+    color: #3949ab;
+}
+
+#content aside {
+    flex: 1 0 20%;
+}
+
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    padding: 16px;
+    height: 48px;
+    font-size: 12px;
+    background: rgba(22, 22, 22, 1);
+    color: rgba(178, 178, 178, 1);
+}
+
+svg {
+    padding: 16px 0 16px 0;
+    fill: rgba(178, 178, 178, .8);
+}
+
+svg:hover {
+    fill: #b2b2b2;
+}
+
+footer p {
+    margin: 0;
+    padding: 16px;
+    /*font-weight: bold;*/
+}
+
+@media (max-width: 500px) {
+    header {
+        justify-content: space-around;
+    }
+    #logo {
+        display: none;
+    }
+}

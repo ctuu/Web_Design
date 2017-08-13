@@ -1,0 +1,214 @@
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Noto Sans CJK SC regular", "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
+    background: rgba(232, 232, 232, 1);
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    height: 48px;
+    width: 100%;
+    z-index: 2;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+#logo {
+    height: 48px;
+    width: 48px;
+    background: rgba(0, 0, 0, .2);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 16px;
+    font-size: 12px;
+    font-family: "Noto Sans CJK SC regular", "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+nav a:hover {
+    color: #3949ab;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+main {
+    margin: 48px 0 0 0;
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+main form {
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    width: 60%;
+    margin: 16px 16px 0 16px;
+}
+
+@media (min-width: 960px) {
+    main>form {
+        width: 40em;
+    }
+}
+
+#input_box {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-self: center;
+    background: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+#input_box>* {
+    border: none;
+    outline: none;
+    padding: 12px 15px 15px 15px;
+    font-size: 14px;
+}
+
+#input_box textarea {
+    resize: none;
+    height: 21px;
+}
+
+#topic_text {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#add_button {
+    transition-duration: 1s;
+    align-self: flex-end;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    margin: -24px -24px 0 0;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
+    border-radius: 48px;
+    color: rgba(66, 66, 66, 1);
+    background: rgba(99, 99, 99, .6);
+}
+
+#add_button:hover {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    color: #000;
+    background: rgba(245, 180, 0, 1);
+}
+
+#stickies {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 16px 16px 16px;
+    margin: 2px;
+    /*background: rgba(255, 255, 255, 1);*/
+}
+
+#stickies li {
+    max-width: 20em;
+    display: flex;
+    flex-flow: column;
+    margin: 16px;
+    padding: 8px;
+    background: rgba(255, 211, 78, 1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+#stickies li span {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    padding: 16px;
+    word-break: break-all;
+}
+
+#stickies li span article {
+    padding: 8px 0 16px 0;
+    /*white-space: pre-wrap;*/
+}
+
+#stickies li span article h1 {
+    margin: 0;
+}
+
+#stickies li span .close {
+    margin: -16px -16px -16px 0;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    align-self: flex-end;
+    font-weight: 700;
+    color: rgba(118, 86, 0, 1);
+    opacity: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+#stickies li:hover span .close {
+    transition-duration: 0.6s;
+    opacity: 0.4;
+}
+
+#stickies li span .close:hover {
+    background: rgba(0, 0, 0, .2);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.sticky article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    padding: 16px;
+    height: 48px;
+    font-size: 12px;
+    background: rgba(22, 22, 22, 1);
+    color: rgba(178, 178, 178, 1);
+}
+
+svg {
+    padding: 16px 0 16px 0;
+    fill: rgba(178, 178, 178, .8);
+}
+
+svg:hover {
+    fill: #b2b2b2;
+}
+
+footer p {
+    margin: 0;
+    padding: 16px;
+    /*font-weight: bold;*/
+}
+
+@media (max-width: 500px) {
+    header {
+        justify-content: space-around;
+    }
+    #logo {
+        display: none;
+    }
+}
