@@ -30,15 +30,33 @@ section {
 
 .title {
     flex: 1;
-    align-content: space-around;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
     margin: 0;
 }
 
 .title>h1 {
     margin: 0;
+    padding: 8px;
+    font-size: 24px;
+    align-items: center;
+    
+}
+
+.title>div {
+    display: flex;
+    flex-flow: row wrap;
     flex: 1;
+    justify-content: flex-end;
+
+}
+.title>div>button {
+    max-width: 16%;
+    height: 36px;
+    margin: 4px;
 }
 
 .ta {
@@ -47,7 +65,7 @@ section {
     /* height: 50%;
     width: 50%; */
     /* margin: 64px auto 64px auto; */
-    /* padding: 32px; */
+    padding: 8px 16px 8px 16px;
     /*background: #ffd34e;*/
 }
 
@@ -61,9 +79,15 @@ section {
 
 .tr > h2 {
     margin: 0;
-    min-width: 20%;
+    min-width: 16%;
+    font-size: 16px;
 }
 
+.tr > span {
+    color: #000;
+    font-size: 16px;
+    margin-left: -8px;
+}
 .flexP {
     display: flex;
     flex-flow: row wrap;
@@ -83,11 +107,18 @@ section {
     margin-bottom: 8px;
 }
 
-
-/* button {
-    width: 25%;
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #465dfc;
+}
+span {
+    color: #666666;
+}
+button {
+    width: 100%;
     align-self: center;
-} */
+}
 
 
 /* @media (max-width:460px) {
@@ -99,3 +130,29 @@ section {
         align-self: center;
     }
 } */
+
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    padding: 16px;
+    height: 48px;
+    font-size: 12px;
+    background: rgba(22, 22, 22, 1);
+    color: rgba(178, 178, 178, 1);
+}
+
+svg {
+    padding: 16px 0 16px 0;
+    fill: rgba(178, 178, 178, .8);
+}
+
+svg:hover {
+    fill: #b2b2b2;
+}
+
+footer p {
+    margin: 0;
+    padding: 16px;
+    /*font-weight: bold;*/
+}
