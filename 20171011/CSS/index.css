@@ -38,12 +38,17 @@ section {
     margin: 0;
 }
 
+.title>i {
+    margin: auto 4px auto 4px;
+    font-size: 24px;
+    color: #b1bcd9;
+}
+
 .title>h1 {
     margin: 0;
     padding: 8px;
     font-size: 24px;
     align-items: center;
-    
 }
 
 .title>div {
@@ -51,14 +56,49 @@ section {
     flex-flow: row wrap;
     flex: 1;
     justify-content: flex-end;
-
 }
+
 .title>div>button {
-    max-width: 16%;
+    /* max-width: 16%; */
+    width: 80px;
     height: 36px;
     margin: 4px;
+    padding: 0;
+    cursor: pointer;
 }
 
+.btnSave {
+    color: #fff;
+    background-color: #0b5fa4;
+    background-image: linear-gradient(#2973b5, #0b5fa4);
+    border-radius: 4px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.btnSave:hover {
+    background-color: #367dbb;
+    background-image: linear-gradient(#4f87b4, #367dbb);
+    border-color: #498fc9;
+}
+
+.btnCancel {
+    color: rgb(51, 51, 51);
+    background-color: rgb(236, 236, 236);
+    background-image: linear-gradient(rgb(244, 244, 244), rgb(236, 236, 236));
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 4px;
+}
+
+.btnCancel:hover {
+    background-color: rgb(222, 222, 222);
+    background-image: linear-gradient(rgb(232,232,232), rgb(222, 222, 222));
+    border-color: rgb(212, 212, 212);
+}
+
+.btnCancel:active, .btnSave:active {
+    position: relative;
+    top: 1px;
+}
 .ta {
     display: flex;
     flex-flow: column;
@@ -88,6 +128,7 @@ section {
     font-size: 16px;
     margin-left: -8px;
 }
+
 .flexP {
     display: flex;
     flex-flow: row wrap;
@@ -95,6 +136,7 @@ section {
 
 .flexP > * {
     margin-right: 10px;
+    margin-bottom: 4px;
 }
 
 .optionArea {
@@ -112,9 +154,14 @@ a {
     font-size: 14px;
     color: #465dfc;
 }
+
+input {
+    border: 1px solid rgb(212, 212, 212);
+}
 span {
     color: #666666;
 }
+
 button {
     width: 100%;
     align-self: center;
