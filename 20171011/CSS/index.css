@@ -9,7 +9,7 @@ body {
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: row wrap;
 }
 
 section {
@@ -168,15 +168,11 @@ button {
 }
 
 
-/* @media (max-width:460px) {
-    .tr :nth-child(2) {
-        max-width: 90%;
+@media (max-width:600px) {
+    main {
+        flex-flow: column;
     }
-    button {
-        width: 50%;
-        align-self: center;
-    }
-} */
+}
 
 footer {
     display: flex;
